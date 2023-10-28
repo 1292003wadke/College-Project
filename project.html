@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Theater Production Management</title>
+    <style>
+ @keyframes fade-in {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slide-left {
+            0% {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slide-right {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Animation Classes */
+        .animate-fade-in {
+            animation: fade-in 1s ease-in-out;
+        }
+
+        .animate-slide-left {
+            animation: slide-left 1s ease-in-out;
+        }
+
+        .animate-slide-right {
+            animation: slide-right 1s ease-in-out;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+            font-weight: normal;
+        }
+
+        nav {
+	 text-align: center; 
+            background-color: #eee;
+            padding: 10px;
+            overflow: auto;
+        }
+
+        nav a {
+            display: block;
+            float: left;
+            padding: 10px;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #333;
+            color: white;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #ddd;
+            padding: 20px;
+            text-align: center;
+            clear: both;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        h3 {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        video {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img src="C:\Users\LENOVO\Documents\12.jpg" width="200" height="200">
+    <h1>Muktai Foundation</h1>
+</header>
+<nav>
+    <a href="project.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="shows.html">Shows</a>
+    <a href="project 1.html">Tickets</a>
+        <a href="form.html">Join us</a>
+</nav>
+<section class="container animate-fade-in">
+    <img src="C:\Users\LENOVO\Documents\4.webp" alt="theater" width="250" height="250">
+    <h3>"Theater is, of course, a reflection of life. Maybe we have to improve life before we can hope to improve theater." ~ William Ralph Inge
+    </h3>
+</section>
+<section class="container animate-slide-left">
+    <video controls>
+        <source src="C:\Users\LENOVO\Downloads\WhatsApp Video 2023-05-09 at 00.40.34.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <h3>One Of our Successful plays "Urus" which was telecasted on Q Marathi TV Channel.</h3>
+    <h3>A son Came back to his village after a long path of years who ran away seeing his fathers death.<br>
+        And then returns to the village to complete his fathers wish as to bring light and electricity which was kept away in the blind believe.
+    </h3>
+</section>
+<section class="container animate-slide-right">
+    <img src="C:\Users\LENOVO\Documents\5.jpg" alt="theater" width="200" height="200">
+    <h3>With theatre, you have to be ready for anything.- Willem Dafoe</h3>
+</section>
+<section class="container animate-slide-left">
+    <img src="C:\Users\LENOVO\Documents\6.webp" alt="theater" width="200" height="200">
+    <h3>All the World's a Stage ~ William Shakespeare.</h3>
+</section>
+<section class="container animate-slide-in">
+    <img src="C:\Users\LENOVO\Documents\1.jpg" alt="theater">
+    <h3>"The stage is not merely the meeting place of all the arts, but is also the return of art to life." ~ Oscar Wilde
+    </h3>
+</section>
+<section class="container animate-slide-right">
+    <h2>About Us</h2>
+    <p>Muktai Foundation is a group of people that manage theater productions, shows, and events. We specialize in providing high-quality productions and events for a variety of audiences and venues. We also run one-act plays and other shows of our own production.</p>
+    <h2>Contact Us</h2>
+    <p>Phone: 9307710946<br>
+        Email: muktaifoundation@gmail.com<br>
+        Address: A/17 Shubhlabh Recidency, Gurvar peth, Pune.</p>
+    <h3>Instagram:</h3>
+    <a href="https://instagram.com/muktai.foundation.pune?igshid=NTc4MTIwNjQ2YQ==">@muktaifoundation</a>
+</section>
+<footer>
+    <p>&copy; 2023 Muktai Foundation</p>
+</footer>
+</body>
+</html>
+

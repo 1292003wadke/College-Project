@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head><title>Shows</title>
+		<style>
+	@keyframes fade-in {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slide-left {
+            0% {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slide-right {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Animation Classes */
+        .animate-fade-in {
+            animation: fade-in 1s ease-in-out;
+        }
+
+        .animate-slide-left {
+            animation: slide-left 1s ease-in-out;
+        }
+
+        .animate-slide-right {
+            animation: slide-right 1s ease-in-out;
+        }
+	header {
+			background-color: #333;
+			color: white;
+			padding: 20px;
+			text-align: center;
+		}
+
+		h2 {
+			margin: 0;
+			font-size: 36px;
+			font-weight: normal;
+			text-align: center;	
+		}
+		
+		nav {
+			background-color: #eee;
+			padding: 10px;
+			overflow: auto;
+		}
+		nav a {
+			display: block;
+			float: left;
+			padding: 10px;
+			color: black;
+			text-decoration: none;
+			font-weight: bold;
+		   }
+			 section {
+  	        	 padding: 20px;
+   		      	 text-align: center;
+    	 	   }
+		nav a:hover {
+			background-color: #333;
+			color: white;
+		}
+ 		  .container {
+  	          max-width: 800px;
+   	         margin: 0 auto;
+  	      }
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			margin-bottom: 20px;
+		}
+		th, td {
+			border: 1px solid #ddd;
+			padding: 8px;
+			text-align: left;
+		}
+		th {
+			background-color: #333;
+			color: white;
+		}
+		footer {
+			background-color: #ddd;
+			padding: 20px;
+			text-align: center;
+		}
+		</style></head>
+	<body>
+		<header>
+			<img src="C:\Users\LENOVO\Documents\12.jpg" width="200" height="200">
+			<h1>Muktai Foundation</h1>
+		</header>
+		<nav>
+			<a href="project.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="shows.html">Shows</a>
+			<a href="project 1.html">Tickets 
+			</a>
+			<a href="form.html">Join us</a>
+		</nav>
+<h2>Upcoming Shows</h2>
+<section class="container animate-fade-in">
+		<table class="container animate-fade-right">
+			<border=3>
+			<tr>
+				<th>Show Title</th>
+				<th>Date</th>
+				<th>Time</th>
+				<th>Ticket Price</th>
+                <th> Venue </th>
+            </tr>
+			<tr>
+				<td>Rawayat E virasat</td>
+				<td>October 27, 2023</td>
+				<td>10:30 PM</td>
+				<td>Rs. 200</td>
+                <td>Ramkrushna More Auditorium</td>
+			</tr>
+			<tr>
+				<td>Bhridi</td>
+				<td>October 27, 2023</td>
+				<td>5:00 PM</td>
+				<td>Free Tickets</td>
+                <td>Bharat Natya Mandir, Sadashiv Peth, Pune.</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+                <td></td>
+			</tr>
+       
+			</border>
+		</table>
+		</section>
+		<footer>
+			<p>&copy; 2023 Muktai Foundation</p>
+		</footer>
+	</body>
+	</html>

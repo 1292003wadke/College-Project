@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="project 3.css" />
+    <title>Theatre Seat Booking</title>
+    <style>
+
+		@keyframes fade-in {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slide-left {
+            0% {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slide-right {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Animation Classes */
+        .animate-fade-in {
+            animation: fade-in 1s ease-in-out;
+        }
+
+        .animate-slide-left {
+            animation: slide-left 1s ease-in-out;
+        }
+
+        .animate-slide-right {
+            animation: slide-right 1s ease-in-out;
+        }
+		h1 {
+			margin: 0;
+			font-size: 36px;
+			font-weight: normal;
+		}
+		nav {
+			background-color: #eee;
+			padding: 10px;
+			overflow: auto;
+		}
+		nav a {
+			display: block;
+			float: left;
+			padding: 10px;
+			color: black;
+			text-decoration: none;
+			font-weight: bold;
+		}
+		nav a:hover {
+			background-color: #333;
+			color: white;
+		}
+    footer {
+			background-color: #ddd;
+			padding: 20px;
+			text-align: center;
+		}
+    </style>
+  </head>
+  <body>
+    <body>
+      <img src="C:\Users\LENOVO\Documents\12.jpg" width="200" height="200">
+      <header>
+        <h1>Muktai Foundation</h1>
+      </header>
+     <section><nav>
+        <a href="project.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="shows.html">Shows</a>
+        <a href="project 1.html">Tickets 
+        </a>
+        <a href="form.html">Join us</a>
+      </nav></section>
+    <div class="show-container animate-slide-right">
+      <label> Select a show:</label>
+      <select id="show">
+        <option value="Free">Bhridi (RS.000)</option>
+        <option value="200">Rawayat E Virasat (12th show) (RS.200)</option>
+      </select>
+    </div>
+    <script src="project 2.js"></script>
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>Available</small>
+      </li>
+      <li>
+        <div class="seat selected"></div>
+        <small>Selected</small>
+      </li>
+      <li>
+        <div class="seat sold"></div>
+        <small>Sold</small>
+      </li>
+    </ul>
+    <div class="container animate-slide-left">
+      <div class="screen"></div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+      </div>
+    </div>
+    <p class="text">
+      You have selected <span id="count">0</span> seat for a price of RS.<span
+        id="total"
+        >0</span
+      >
+    </p>
+    <script src="project 2.js"></script>
+    <footer>
+      <p color="Yellow">&copy; 2023 Muktai Foundation</p>
+    </footer>
+  </body>
+</html>

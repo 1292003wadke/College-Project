@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Theater Production Management</title>
+	<style>
+	@keyframes fade-in {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+		 @keyframes slide-left {
+            0% {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slide-right {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Animation Classes */
+        .animate-fade-in {
+            animation: fade-in 1s ease-in-out;
+        }
+
+        .animate-slide-left {
+            animation: slide-left 1s ease-in-out;
+        }
+
+        .animate-slide-right {
+            animation: slide-right 1s ease-in-out;
+        }
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			background-color: #333;
+			color: white;
+			padding: 20px;
+			text-align: center;
+		}
+		h1 {
+			margin: 0;
+			font-size: 36px;
+			font-weight: normal;
+		}
+		nav {
+			background-color: #eee;
+			padding: 10px;
+			overflow: auto;
+		}
+		nav a {
+			display: block;
+			float: left;
+			padding: 10px;
+			color: black;
+			text-decoration: none;
+			font-weight: bold;
+		}
+		nav a:hover {
+			background-color: #333;
+			color: white;
+		}
+		section {
+			padding: 20px;
+		}
+		footer {
+			background-color: #ddd;
+			padding: 20px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<header>
+        <img src="C:\Users\LENOVO\Documents\12.jpg" width="200" height="200">
+		<h1>Muktai Foundation</h1>
+	</header>
+	<nav>
+		<a href="project.html">Home</a>
+		<a href="about.html">About</a>
+		<a href="shows.html">Shows</a>
+		<a href="project 1.html">Tickets 
+		</a>
+		<a href="form.html">Join us</a>
+	</nav>
+    <section class="container animate-fade-in">
+    <h3>Muktai Foundtion is a theatrical production.<br><br>
+         We deal with various theatre events.<br><br>
+          We conduct events and partiticipates in Theatre Play Competitions.<br><br> 
+          We have won Various Prizes in Theatre Plays.<br><br>
+          And have conducted various events publically.
+        </h3>
+        </section>
+          <footer>
+		<p>&copy; 2023 Muktai Foundation</p>
+	</footer>
+</body>
+</html>

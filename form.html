@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Muktai Foundation Membership Application Form</title>
+    <style>
+
+		@keyframes fade-in {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slide-left {
+            0% {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slide-right {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Animation Classes */
+        .animate-fade-in {
+            animation: fade-in 1s ease-in-out;
+        }
+
+        .animate-slide-left {
+            animation: slide-left 1s ease-in-out;
+        }
+
+        .animate-slide-right {
+            animation: slide-right 1s ease-in-out;
+        }
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			background-color: #333;
+			color: white;
+			padding: 20px;
+			text-align: center;
+		}
+		h1 {
+			margin: 0;
+			font-size: 36px;
+			font-weight: normal;
+		}
+		nav {
+			background-color: #eee;
+			padding: 10px;
+			overflow: auto;
+		}
+		nav a {
+			display: block;
+			float: left;
+			padding: 10px;
+			color: black;
+			text-decoration: none;
+			font-weight: bold;
+		}
+		nav a:hover {
+			background-color: #333;
+			color: white;
+		}
+		section {
+			padding: 20px;
+		}
+		footer {
+			background-color: #ddd;
+			padding: 20px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+    <header>
+        <img src="C:\Users\LENOVO\Documents\12.jpg" width="200" height="200">
+        <h1>Muktai Foundation</h1>
+    </header>
+    <nav>
+        <a href="project.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="shows.html">Shows</a>
+        <a href="project 1.html">Tickets 
+        </a>
+        <a href="form.html">Join us</a>
+    </nav>
+	<form method="post" action="submit form.php">
+        <section class="container animate-fade-in">
+		<fieldset>
+			<legend>Personal Information:</legend>
+			<label for="full-name">Full Name:</label>
+			<input type="text" name="full-name" id="full-name" required><br>
+
+			<label for="dob">Date of Birth:</label>
+			<input type="date" name="dob" id="dob" required><br>
+
+			<label for="gender">Gender:</label>
+			<select name="gender" id="gender" required>
+				<option value="">--Please select--</option>
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="non-binary">Non-binary</option>
+			</select><br>
+
+			<label for="contact-number">Contact Number:</label>
+			<input type="tel" name="contact-number" id="contact-number" required><br>
+
+			<label for="email">Email Address:</label>
+			<input type="email" name="email" id="email" required><br>
+
+			<label for="address">Address:</label>
+			<textarea name="address" id="address" rows="3" required></textarea><br>
+
+			<label for="city">City:</label>
+			<input type="text" name="city" id="city" required><br>
+
+			<label for="state">State:</label>
+			<input type="text" name="state" id="state" required><br>
+
+			<label for="zip-code">Zip Code:</label>
+			<input type="text" name="zip-code" id="zip-code" required><br>
+
+			<label for="country">Country:</label>
+			<input type="text" name="country" id="country" required><br>
+		</fieldset>
+    </section>
+        <section class="container animate-fade-in">
+		<fieldset>
+			<legend>Background and Experience:</legend>
+			<label for="education">Educational Background:</label>
+			<textarea name="education" id="education" rows="3" required></textarea><br>
+
+			<label for="experience">Work or Volunteer Experience:</label>
+			<textarea name="experience" id="experience" rows="3" required></textarea><br>
+
+			<label for="non-profit">Experience with Non-profit Organizations:</label>
+			<textarea name="non-profit" id="non-profit" rows="3" required></textarea><br>
+		</fieldset>
+    </section>
+        <section class="container animate-fade-in">
+		<fieldset>
+			<legend>Motivation and Interests:</legend>
+			<label for="interests">Reasons for joining the Muktai Foundation:</label>
+			<textarea name="interests" id="interests" rows="3" required></textarea><br>
+
+			<label for="skills">Skills and Expertise:</label>
+			<textarea name="skills" id="skills" rows="3" required></textarea><br>
+
+			<label for="areas">Areas of Interest:</label>
+			<textarea name="areas" id="areas" rows="3" required></textarea><br>
+        </fieldset>
+    </section>
+<section class="container animate-fade-in">
+    <fieldset>
+        <legend>Additional Information:</legend>
+        <label for="occupation">Occupation:</label> 
+        <input type="text" name="occupation" id="occupation" required><br>
+        <label for="languages">Languages Spoken:</label>
+        <input type="text" name="languages" id="languages"><br>
+
+        <label for="interests">Hobbies and Interests:</label>
+        <input type="text" name="interests" id="interests"><br>
+    </fieldset>
+</section>
+    <input type="submit" value="submit-form"></input><br><br>
+    <?php include 'submit form.php';?>
+        </form>
+        <footer>
+            <p>&copy; 2023 Muktai Foundation</p>
+        </footer>
+			</body>
+			</html>
